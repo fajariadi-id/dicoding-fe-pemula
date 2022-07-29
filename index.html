@@ -16,7 +16,7 @@
 
     <main class="container">
       <section class="add-book">
-        <h2>buku baru</h2>
+        <h2 class="section-title">buku baru</h2>
 
         <form id="form">
           <input
@@ -37,11 +37,34 @@
             placeholder="masukkan tahun disini"
             autocomplete="off"
           />
-
-          <!-- <ul class="todos" id="todos"></ul> -->
         </form>
 
         <button class="btn btn-submit">tambah buku</button>
+      </section>
+
+      <section class="list-book">
+        <h2 class="section-title">daftar buku</h2>
+
+        <div class="books-container">
+          <article class="unfinished">
+            <h3 class="section-title">belum selesai dibaca</h3>
+
+            <div class="books">
+              <div class="card"></div>
+              <div class="card"></div>
+            </div>
+          </article>
+
+          <article class="finished">
+            <h3 class="section-title">selesai dibaca</h3>
+
+            <div class="books">
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 

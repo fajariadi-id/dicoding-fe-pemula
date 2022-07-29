@@ -97,22 +97,28 @@ p {
 }
 
 .container {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   margin-top: 100px;
 }
 
-.add-book {
+.add-book,
+.list-book {
+  margin-top: 10px;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.add-book h2 {
+.section-title {
   font-size: 1.25rem;
   text-align: center;
   opacity: 0.15;
   margin-bottom: 10px;
+}
+
+h3.section-title {
+  font-size: 1rem;
 }
 
 .add-book .input {
@@ -127,6 +133,10 @@ p {
   transition: all 0.5s ease;
 }
 
+.add-book .input::placeholder {
+  opacity: 0.3;
+}
+
 .add-book .input:focus {
   outline: none;
   box-shadow: 0 3px 6px rgba(255, 78, 167, 0.3);
@@ -136,7 +146,7 @@ p {
   cursor: pointer;
   font-family: inherit;
   font-size: 12px;
-  background-color: red;
+  background-color: blue;
   color: white;
   border: none;
   border-radius: 5px;
@@ -150,7 +160,7 @@ p {
   border-radius: 10px;
   font-size: 16px;
   background-color: var(--clr-white);
-  color: rgba(34, 34, 34, 0.3);
+  color: rgba(34, 34, 34, 0.2);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -160,5 +170,42 @@ p {
 
 .btn.btn-submit:active {
   transform: translateY(2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.books-container {
+  display: flex;
+  gap: 20px;
+}
+
+.books-container article {
+  padding: 10px;
+  flex: 1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 500px;
+}
+
+.books {
+  border-radius: 10px;
+  background-color: burlywood;
+  opacity: 0.5;
+  width: 100%;
+  height: 450px;
+  padding: 5px;
+  padding-bottom: 10px;
+  overflow-y: auto;
+}
+
+.books::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  height: 100px;
+  width: 100%;
+  margin-top: 5px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
