@@ -1,0 +1,164 @@
+/* *======= Google Fonts =======* */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap&family=Roboto:wght@200;400&display=swap");
+
+/* *======= VARIABEL =======* */
+:root {
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Roboto", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+  --clr-white: #f6f6f4;
+  --clr-black: #222222;
+  --clr-black-hover: #222222cc;
+
+  --radius: 0.5rem;
+  --transition: all 0.3s ease;
+  --transition-cb: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --shadow-light: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* *======= GLOBAL STYLE =======* */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* ==== styles ==== */
+.navbar {
+  /* background-color: red; */
+  background-color: var(--clr-white);
+  padding-bottom: 10px;
+  padding-top: 20px;
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar h1 {
+  text-align: center;
+
+  opacity: 0.1;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.add-book {
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-book h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  opacity: 0.15;
+  margin-bottom: 10px;
+}
+
+.add-book .input {
+  width: 100%;
+  padding: 20px;
+  font-family: inherit;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+
+.add-book .input:focus {
+  outline: none;
+  box-shadow: 0 3px 6px rgba(255, 78, 167, 0.3);
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn.btn-submit {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: var(--clr-white);
+  color: rgba(34, 34, 34, 0.3);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn-submit:hover {
+  box-shadow: 0 3px 6px rgba(96, 78, 255, 0.3);
+}
+
+.btn.btn-submit:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
