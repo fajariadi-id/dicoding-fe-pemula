@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>perpus</title>
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -45,12 +51,37 @@
       <section class="list-book">
         <h2 class="section-title">daftar buku</h2>
 
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="input"
+            placeholder="cari judul buku"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
         <div class="books-container">
           <article class="unfinished">
             <h3 class="section-title">belum selesai dibaca</h3>
 
             <div class="books">
-              <div class="card"></div>
+              <div class="card">
+                <div class="book-info">
+                  <h4>Judul Buku</h4>
+                  <p>Penulis: Penulis Buku</p>
+                  <p>Tahun: 2022</p>
+                </div>
+
+                <div class="actions">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <div>
+                    <i class="fa-solid fa-pencil"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+                </div>
+              </div>
               <div class="card"></div>
             </div>
           </article>
