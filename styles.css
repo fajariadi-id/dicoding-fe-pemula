@@ -76,8 +76,8 @@ h4 {
 .navbar {
   /* background-color: red; */
   background-color: var(--clr-white);
-  padding-bottom: 10px;
-  padding-top: 20px;
+  padding: 10px 0;
+  padding-bottom: 20px;
   /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05); */
   position: fixed;
   top: 0;

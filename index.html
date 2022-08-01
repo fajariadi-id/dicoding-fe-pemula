@@ -26,26 +26,32 @@
 
         <form id="form">
           <input
+            maxlength="24"
+            id="title"
             type="text"
             class="input"
             placeholder="masukkan judul disini"
             autocomplete="off"
           />
           <input
+            maxlength="24"
+            id="writer"
             type="text"
             class="input"
             placeholder="masukkan penulis disini"
             autocomplete="off"
           />
           <input
+            maxlength="4"
+            id="year"
             type="text"
             class="input"
             placeholder="masukkan tahun disini"
             autocomplete="off"
           />
-        </form>
 
-        <button class="btn btn-submit">tambah buku</button>
+          <button type="submit" class="btn btn-submit">tambah buku</button>
+        </form>
       </section>
 
       <section class="list-book">
@@ -66,8 +72,8 @@
           <article class="unfinished">
             <h3 class="section-title">belum selesai dibaca</h3>
 
-            <div class="books">
-              <div class="card">
+            <div id="unfinished" class="books">
+              <!-- <div class="card">
                 <div class="book-info">
                   <h4>Judul Buku</h4>
                   <p>Penulis: Penulis Buku</p>
@@ -82,14 +88,14 @@
                   </div>
                 </div>
               </div>
-              <div class="card"></div>
+              <div class="card"></div> -->
             </div>
           </article>
 
           <article class="finished">
             <h3 class="section-title">selesai dibaca</h3>
 
-            <div class="books">
+            <div id="finished" class="books">
               <div class="card"></div>
               <div class="card"></div>
               <div class="card"></div>
