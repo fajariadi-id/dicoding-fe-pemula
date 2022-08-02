@@ -79,23 +79,21 @@ h4 {
   padding: 10px 0;
   padding-bottom: 20px;
   /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05); */
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 999; */
 }
 
 .navbar h1 {
   text-align: center;
-
   opacity: 0.1;
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 100px;
 }
 
 .add-book,
@@ -207,6 +205,14 @@ h3.section-title {
   display: flex;
 }
 
+.card.edit {
+  background-color: rgba(96, 78, 255, 0.2);
+}
+
+.card.success {
+  background-color: red;
+}
+
 .card p {
   font-size: 12px;
 }
@@ -262,6 +268,10 @@ h3.section-title {
   align-self: flex-end;
 }
 
+.card .actions .fa-right-from-bracket.complete {
+  transform: scaleX(-1);
+}
+
 .card .actions .fa-right-from-bracket:hover {
   box-shadow: 0 3px 6px rgba(96, 78, 255, 0.2);
 }
@@ -311,6 +321,104 @@ h3.section-title {
   opacity: 0.2;
 }
 
-.search-bar .fa-arrow-right {
-  cursor: pointer;
+.modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(255, 0, 0, 0.2);
+  background-color: var(--clr-white);
+}
+
+.modal::backdrop {
+  backdrop-filter: blur(2px);
+}
+
+.modal-delete p {
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+.modal-delete .btn-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.modal-delete .btn-container button {
+  padding: 5px 10px;
+  flex: 1;
+}
+
+.modal-delete .btn-container .btn-cancel {
+  transition: all 0.3s ease;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.modal-delete .btn-container .btn-cancel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-delete .btn-container .btn-cancel:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+}
+
+.modal-delete .btn-container .btn-confirm {
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border: 1px solid rgba(255, 0, 0, 0.7);
+  color: #222222bd;
+}
+
+.modal-delete .btn-container .btn-confirm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-delete .btn-container .btn-confirm:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+}
+
+.modal-form h1,
+.modal-delete h1 {
+  font-size: 18px;
+  color: red;
+}
+
+.modal-form p {
+  opacity: 0.5;
+}
+
+.modal-form hr,
+.modal-delete hr {
+  margin: 5px 0;
+  opacity: 0.3;
+}
+
+.modal-form .btn-complete {
+  margin-top: 10px;
+  padding: 5px 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.modal-form .btn-complete:focus {
+  outline: none;
+}
+
+.modal-form .btn-complete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-form .btn-complete:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
 }

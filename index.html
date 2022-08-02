@@ -72,38 +72,38 @@
           <article class="unfinished">
             <h3 class="section-title">belum selesai dibaca</h3>
 
-            <div id="unfinished" class="books">
-              <!-- <div class="card">
-                <div class="book-info">
-                  <h4>Judul Buku</h4>
-                  <p>Penulis: Penulis Buku</p>
-                  <p>Tahun: 2022</p>
-                </div>
-
-                <div class="actions">
-                  <i class="fa-solid fa-right-from-bracket"></i>
-                  <div>
-                    <i class="fa-solid fa-pencil"></i>
-                    <i class="fa-solid fa-trash-can"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="card"></div> -->
-            </div>
+            <div id="unfinished" class="books"></div>
           </article>
 
           <article class="finished">
             <h3 class="section-title">selesai dibaca</h3>
 
-            <div id="finished" class="books">
-              <div class="card"></div>
-              <div class="card"></div>
-              <div class="card"></div>
-            </div>
+            <div id="finished" class="books"></div>
           </article>
         </div>
       </section>
     </main>
+
+    <!-- modal dialog delete -->
+    <dialog class="modal modal-delete">
+      <h1>alert!</h1>
+      <hr />
+      <p>yakin nih mau dihapus aja?</p>
+
+      <div class="btn-container">
+        <button class="btn btn-cancel">gak jadi</button>
+        <button class="btn btn-confirm">yakin!</button>
+      </div>
+    </dialog>
+
+    <!-- modal dialog form -->
+    <dialog class="modal modal-form">
+      <h1>alert!</h1>
+      <hr />
+      <p></p>
+
+      <button class="btn btn-complete">okeyy!</button>
+    </dialog>
 
     <!-- javascript -->
     <script src="./script.js"></script>
