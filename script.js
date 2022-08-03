@@ -182,6 +182,7 @@ const unfinishedBookCard = (book) => {
     deleteUnfinishedBook(bookEl, id);
 
     localStorage.setItem("unfinishedBooks", JSON.stringify(unfinishedBooks));
+    localStorage.setItem("finishedBooks", JSON.stringify(finishedBooks));
   });
 
   editBtn.addEventListener("click", () => {
@@ -255,6 +256,7 @@ const finishedBookCard = (book) => {
     deleteFinishedBook(bookEl, id);
 
     localStorage.setItem("finishedBooks", JSON.stringify(finishedBooks));
+    localStorage.setItem("unfinishedBooks", JSON.stringify(unfinishedBooks));
   });
 
   editBtn.addEventListener("click", () => {
@@ -283,6 +285,10 @@ const clearForm = () => {
   inputTitle.value = "";
   inputWriter.value = "";
   inputYear.value = "";
+
+  inputTitle.blur();
+  inputWriter.blur();
+  inputYear.blur();
 };
 
 const deleteUnfinishedBook = (bookEl, id) => {
